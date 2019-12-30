@@ -5,4 +5,4 @@
 youtube-dl -f bestaudio -o "$2%(playlist_index)s-%(title)s.%(ext)s" $1
 
 #rename spaces in tracks with underscores
-perl-rename 'y/ /_/'  $1*
+perl-rename 's/ /_/g'  $1*
