@@ -1,11 +1,8 @@
 #!/bin/sh
 #creates an audio file between two timestamps in a larger audio file
-#usage: ./split.sh <album-file> <start-time> <end-time> <track-name.extension>
 #time format: 00:00:00 (hours:mins:secs)
-
-#ffmpeg -i $1 -acodec copy -ss $2 -to $3 $4
-
 #usage: ./split.sh <album-file>
+#press Ctrl-c to quit once all tracks have been made
 
 COUNT=1
 
